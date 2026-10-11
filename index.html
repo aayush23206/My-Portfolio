@@ -510,6 +510,18 @@
       transition: var(--transition);
     }
 
+    .project-links .live-link {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      color: #ffffff;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 15px rgba(139, 92, 246, 0.25);
+    }
+
+    .project-links .live-link:hover {
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);
+      transform: translateY(-2px);
+    }
+
     .project-links .github-link {
       background: rgba(255, 255, 255, 0.05);
       color: var(--text-primary);
@@ -956,7 +968,7 @@
       <!-- Project 2 -->
       <div class="project-card">
         <div class="project-img">
-          <img src="flappy-bird.png" alt="Flappy Bird Screenshot" style="
+          <img src="spis-preview.png" alt="Oil India Limited SPIS Screenshot" style="
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -967,25 +979,30 @@
               " />
         </div>
         <div class="project-info">
-          <h3 class="project-title">Flappy Bird Game</h3>
+          <h3 class="project-title">OIL India – SPIS</h3>
           <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
+            <span class="project-tag">AI / NLP</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Machine Learning</span>
             <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Vercel</span>
           </div>
           <p class="project-desc">
-            A fully-functional, web-based clone of Flappy Bird built entirely from scratch with HTML, CSS, and vanilla
-            JavaScript! I focused heavily on the game feel—implementing custom gravity-based physics and performance
-            optimizations so it runs incredibly smoothly on any screen size.
+            An AI/NLP-powered intelligence system built for Oil India Limited to detect Serious Injury &amp; Fatality (SIF)
+            precursors in HSSE incident reports. Features an executive dashboard with real-time risk classification,
+            automated Life-Saving Rule tagging, and site risk analytics compliant with OISD and DGMS standards.
             <br /><br />
             <strong>Key Highlights:</strong><br />
-            • Custom gravity-based physics and real-time collision detection<br />
-            • Ultra-responsive controls for seamless, addictive gameplay<br />
-            • Dynamic score tracking and instant restart logic<br />
-            • Highly optimized rendering for consistent framerates everywhere
+            • Real-time SIF potential classification using TF-IDF &amp; Logistic Regression<br />
+            • Automated IOGP Life-Saving Rule tagging via multi-class classification<br />
+            • Interactive executive HSSE dashboard with site risk rankings and trend analytics<br />
+            • Dual architecture: FastAPI ML backend with client-side NLP fallback for instant offline execution
           </p>
           <div class="project-links">
-            <a href="https://github.com/aayush23206/Flappy-Bird-Game" class="github-link" target="_blank"><i
+            <a href="https://oil-india-limited-sif-precursor-int.vercel.app/#overview" class="live-link" target="_blank"><i
+                class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/aayush23206/OIL-INDIA-LIMITED-SIF-Precursor-Intelligence-System" class="github-link" target="_blank"><i
                 class="fab fa-github"></i> View Code</a>
           </div>
         </div>
